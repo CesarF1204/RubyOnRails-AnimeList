@@ -1,0 +1,7 @@
+<h1>All animes</h1>
+<a href="animes/new">Create Anime</a>
+<% @animes.each do |anime| %>
+    <ul>
+        <li><a href="animes/<%= anime.id %>"><%= anime.name %></a></li>
+    </ul>
+<% end %>
