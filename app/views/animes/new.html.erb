@@ -1,6 +1,7 @@
 <h1>Create New Anime</h1>
 <form action='/create_process' method='post'>
     <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-    <input type="text" name="name">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name">
     <input type="submit" value="Create Anime">
 </form>

@@ -2,6 +2,7 @@
 <form action='/edit_process/<%= @anime.id %>' method='post'>
     <input type="hidden" name="_method" value="patch">
     <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-    <input type='text' name="name" value='<%= @anime.name %>'>
+    <label for="name">Name</label>
+    <input type='text' name="name" id="name" value='<%= @anime.name %>'>
     <input type='submit' value="Update">
 </form>
